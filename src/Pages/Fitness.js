@@ -6,7 +6,7 @@ import SmallCard from '../Component/SmallCard';
 const Fitness = () => {
     const [data,setdata]= useState();
     useEffect(()=>{
-       fetch("http://localhost:4005")
+       fetch("https://node-back-end-czgr.onrender.com")
        .then((res)=>(res.json()))
        .then((res)=>(setdata(res)))
          
